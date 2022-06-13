@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox alignment="CENTER" prefHeight="312.0" prefWidth="520.0" spacing="20.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.pa_java.LoginController">
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+    </padding>
+
+    <Label fx:id="jl_error" minHeight="-Infinity" minWidth="-Infinity" prefHeight="31.0" prefWidth="402.0">
+        <graphic>
+            <ImageView fitHeight="38.0" fitWidth="41.0" pickOnBounds="true" preserveRatio="true" />
+        </graphic></Label>
+    <SplitPane dividerPositions="0.5" prefHeight="50.0" prefWidth="510.0">
+        <ImageView fitHeight="37.0" fitWidth="36.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@image/envelope.png" />
+         </image></ImageView>
+        <TextField fx:id="tf_mail" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="34.0" prefWidth="487.0" promptText="votre e-mail" />
+    </SplitPane>
+    <SplitPane dividerPositions="0.5" prefHeight="46.0" prefWidth="510.0">
+        <ImageView fitHeight="37.0" fitWidth="36.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@image/cadenas.png" />
+         </image></ImageView>
+        <PasswordField fx:id="pf_mdp" prefHeight="32.0" prefWidth="474.0" promptText="Votre mot de passe" />
+    </SplitPane>
+    <Button fx:id="btn_connexion" layoutX="203.0" layoutY="205.0" onAction="#onclicksubmit" prefHeight="37.0" prefWidth="100.0" style="-fx-background-color: #F5AA8D;" text="Connexion" textFill="WHITE" />
+</VBox>

@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.pa_java.ConversionController">
+   <ImageView fitHeight="200.0" fitWidth="291.0" layoutX="169.0" layoutY="53.0" pickOnBounds="true" preserveRatio="true">
+      <image>
+         <Image url="@image/convicon.png" />
+      </image>
+   </ImageView>
+   <AnchorPane layoutX="76.0" layoutY="218.0" prefHeight="144.0" prefWidth="486.0">
+      <children>
+         <TextField fx:id="tf_points" layoutX="27.0" layoutY="38.0" prefHeight="56.0" prefWidth="369.0" promptText="Points à convertir">
+            <font>
+               <Font size="20.0" />
+            </font></TextField>
+         <Button fx:id="btn_haut" layoutX="344.0" layoutY="38.0" mnemonicParsing="false" onAction="#addpoints" prefHeight="27.5" prefWidth="52.0">
+            <graphic>
+               <ImageView fitHeight="26.0" fitWidth="26.0" pickOnBounds="true" preserveRatio="true">
+                  <image>
+                     <Image url="@image/fleche_haut.png" />
+                  </image>
+               </ImageView>
+            </graphic></Button>
+         <Button fx:id="btn_bas" layoutX="344.0" layoutY="66.0" mnemonicParsing="false" onAction="#removepoints" prefHeight="26.5" prefWidth="52.0">
+            <graphic>
+               <ImageView fitHeight="25.0" fitWidth="26.0" pickOnBounds="true" preserveRatio="true">
+                  <image>
+                     <Image url="@image/fleche_bas.png" />
+                  </image>
+               </ImageView>
+            </graphic>
+         </Button>
+      </children>
+   </AnchorPane>
+
+    <AnchorPane fx:id="menue_bar_footer" layoutY="429.0" prefHeight="57.0" prefWidth="606.0">
+        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#8b959e" height="75.0" stroke="BLACK" strokeType="INSIDE" width="606.0" />
+        <AnchorPane prefHeight="75.0" prefWidth="200.0">
+            <Button layoutX="55.0" layoutY="1.0" mnemonicParsing="false" onAction="#menu_bar" style="-fx-background-color: #8b959e;" userData="1">
+                <graphic>
+                    <ImageView fx:id="homeicon" fitHeight="63.0" fitWidth="61.0" pickOnBounds="true" preserveRatio="true">
+                        <Image url="@image/home_logo.png" />
+                    </ImageView>
+                </graphic>
+            </Button>
+            <Line endX="168.5" endY="258.0" layoutX="11.0" layoutY="-258.0" startX="168.5" startY="330.0" />
+        </AnchorPane>
+        <AnchorPane layoutX="186.0" prefHeight="64.0" prefWidth="200.0">
+            <Button layoutX="55.0" layoutY="7.0" mnemonicParsing="false" onAction="#menu_bar" style="-fx-background-color: #8b959e;" userData="2">
+                <graphic>
+                    <ImageView fx:id="convicon" fitHeight="50.0" fitWidth="78.0" pickOnBounds="true" preserveRatio="true">
+                        <Image url="@image/conv.png" />
+                    </ImageView>
+                </graphic>
+            </Button>
+            <Line endX="183.0" endY="257.0" layoutX="17.0" layoutY="-257.0" startX="184.0" startY="332.0" />
+        </AnchorPane>
+        <AnchorPane layoutX="406.0" prefHeight="65.0" prefWidth="200.0">
+            <Button layoutX="44.0" layoutY="20.0" mnemonicParsing="false" onAction="#menu_bar" style="-fx-background-color: #8b959e;" userData="3">
+                <graphic>
+                    <ImageView fx:id="optionicon" fitHeight="75.0" fitWidth="78.0" pickOnBounds="true" preserveRatio="true">
+                        <Image url="@image/Modifier_profil.png" />
+                    </ImageView>
+                </graphic>
+            </Button>
+        </AnchorPane>
+    </AnchorPane>
+   <Label alignment="CENTER" contentDisplay="CENTER" layoutY="8.0" prefHeight="56.0" prefWidth="606.0" text="Sur cette page, vous allez pouvoir convertir les points." textAlignment="JUSTIFY" />
+   <Button fx:id="btn_convert" layoutX="193.0" layoutY="336.0" mnemonicParsing="false" onAction="#convertirpoints" prefHeight="52.0" prefWidth="175.0" style="-fx-background-color: #F5AA8D;" text="Convertir" textFill="WHITE">
+      <font>
+         <Font name="Bookshelf Symbol 7" size="20.0" />
+      </font></Button>
+</AnchorPane>

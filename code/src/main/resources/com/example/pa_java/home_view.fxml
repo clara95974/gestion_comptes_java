@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+
+<AnchorPane prefHeight="503.0" prefWidth="606.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.pa_java.HomeController">
+   <children>
+      <AnchorPane layoutX="161.0" layoutY="27.0" prefHeight="107.0" prefWidth="279.0">
+         <children>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#c3cad0" height="101.0" layoutY="6.0" stroke="BLACK" strokeType="INSIDE" width="279.0" />
+            <Label alignment="CENTER" layoutX="24.0" layoutY="21.0" prefHeight="30.0" prefWidth="243.0" text="Nom de l'entreprise :" textAlignment="JUSTIFY" underline="true" />
+            <Label fx:id="jl_username" alignment="CENTER" layoutX="24.0" layoutY="51.0" prefHeight="39.0" prefWidth="250.0" text="nm_entreprise" textAlignment="JUSTIFY" />
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="161.0" layoutY="124.0" prefHeight="107.0" prefWidth="279.0">
+         <children>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#7db2dd" height="101.0" layoutY="6.0" stroke="BLACK" strokeType="INSIDE" width="279.0" />
+            <Label alignment="CENTER" layoutX="24.0" layoutY="21.0" prefHeight="30.0" prefWidth="243.0" text="N° siret :" textAlignment="JUSTIFY" underline="true" />
+            <Label fx:id="jl_usersiret" alignment="CENTER" layoutX="24.0" layoutY="51.0" prefHeight="39.0" prefWidth="243.0" text="nm_siret" textAlignment="JUSTIFY" />
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutY="231.0" prefHeight="107.0" prefWidth="606.0">
+         <children>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#8b959e" height="107.0" stroke="BLACK" strokeType="INSIDE" width="606.0" />
+            <AnchorPane prefHeight="93.0" prefWidth="200.0">
+               <children>
+                  <Button alignment="CENTER" contentDisplay="TOP" layoutX="26.0" layoutY="10.0" mnemonicParsing="false" onAction="#loademploye" prefHeight="83.0" prefWidth="115.0" style="-fx-background-color: #8b959e;" text="Nb employés:">
+                     <graphic>
+                        <ImageView fitHeight="54.0" fitWidth="45.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@image/employé.png" />
+                           </image>
+                        </ImageView>
+                     </graphic></Button>
+                  <Label fx:id="jl_usernbemployé" alignment="CENTER" contentDisplay="CENTER" layoutX="45.0" layoutY="85.0" prefHeight="17.0" prefWidth="78.0" text="1000" />
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutX="203.0" prefHeight="93.0" prefWidth="200.0">
+               <children>
+                  <Button alignment="CENTER" contentDisplay="TOP" layoutX="39.0" layoutY="9.0" mnemonicParsing="false" onAction="#loadproduit" prefHeight="91.0" prefWidth="129.0" style="-fx-background-color: #8b959e;" text="Nb points:">
+                     <graphic>
+                        <ImageView fitHeight="53.0" fitWidth="63.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@image/panier.png" />
+                           </image>
+                        </ImageView>
+                     </graphic></Button>
+                  <Label fx:id="jl_usernbproduit" alignment="CENTER" contentDisplay="CENTER" layoutX="64.0" layoutY="91.0" prefHeight="17.0" prefWidth="78.0" text="1000" />
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutX="406.0" prefHeight="93.0" prefWidth="200.0">
+               <children>
+                  <Button alignment="CENTER" contentDisplay="TOP" layoutX="28.0" layoutY="9.0" mnemonicParsing="false" onAction="#loadcotisation" prefHeight="72.0" prefWidth="145.0" style="-fx-background-color: #8b959e;" text="Cotisation">
+                     <graphic>
+                        <ImageView fitHeight="64.0" fitWidth="138.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@image/cotisation_icon.png" />
+                           </image>
+                        </ImageView>
+                     </graphic></Button>
+                  <Label fx:id="jl_usercotisation" alignment="CENTER" contentDisplay="CENTER" layoutX="64.0" layoutY="91.0" prefHeight="17.0" prefWidth="78.0" />
+                  <Line endX="168.5" endY="230.99998474121094" layoutX="-169.0" layoutY="-231.0" startX="168.5" startY="339.0" />
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="menue_bar_footer" layoutY="429.0" prefHeight="57.0" prefWidth="606.0">
+         <children>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#8b959e" height="75.0" stroke="BLACK" strokeType="INSIDE" width="606.0" />
+            <AnchorPane prefHeight="75.0" prefWidth="200.0">
+               <children>
+                  <Button layoutX="7.0" layoutY="3.0" mnemonicParsing="false" onAction="#menu_bar" prefHeight="66.0" prefWidth="164.0" style="-fx-background-color: #8b959e;" userData="1">
+                     <graphic>
+                        <ImageView fx:id="homeicon" fitHeight="63.0" fitWidth="61.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@image/home_logo.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Line endX="168.5" endY="258.0" layoutX="11.0" layoutY="-258.0" startX="168.5" startY="330.0" />
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutX="186.0" prefHeight="64.0" prefWidth="200.0">
+               <children>
+                  <Button layoutX="8.0" layoutY="7.0" mnemonicParsing="false" onAction="#menu_bar" prefHeight="63.0" prefWidth="186.0" style="-fx-background-color: #8b959e;" userData="2">
+                     <graphic>
+                        <ImageView fx:id="convicon" fitHeight="55.0" fitWidth="78.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@image/conv.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Line endX="183.0" endY="257.0" layoutX="17.0" layoutY="-257.0" startX="184.0" startY="332.0" />
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutX="392.0" layoutY="5.0" prefHeight="65.0" prefWidth="200.0">
+               <children>
+                  <Button layoutX="9.0" layoutY="7.0" mnemonicParsing="false" onAction="#menu_bar" prefHeight="57.0" prefWidth="186.0" style="-fx-background-color: #8b959e;" userData="3">
+                     <graphic>
+                        <ImageView fx:id="optionicon" fitHeight="75.0" fitWidth="78.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@image/Modifier_profil.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+      <Line endX="168.5" endY="230.99998474121094" startX="168.5" startY="339.0" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.pa_java.CotisationController">
+   <Button mnemonicParsing="false" onAction="#retour" prefHeight="31.0" prefWidth="47.0" style="-fx-background-color: F8B69D;" textFill="WHITE">
+      <graphic>
+         <ImageView fitHeight="23.0" fitWidth="54.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+               <Image url="@image/Arrow.png" />
+            </image></ImageView>
+      </graphic>
+   </Button>
+    <AnchorPane layoutY="38.0" prefHeight="143.0" prefWidth="600.0">
+        <Label layoutY="-8.0" prefHeight="44.0" prefWidth="188.0" text="Information contrat :" textFill="#f5aa8d">
+            <font>
+                <Font size="18.0" />
+            </font>
+        </Label>
+      <Label layoutX="54.0" layoutY="44.0" prefHeight="44.0" prefWidth="188.0" text="Date début : " textFill="#f5aa8d">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="54.0" layoutY="88.0" prefHeight="44.0" prefWidth="188.0" text="Date fin : " textFill="#f5aa8d">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="date_debut" layoutX="175.0" layoutY="44.0" prefHeight="44.0" prefWidth="316.0">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="date_fin" layoutX="175.0" layoutY="88.0" prefHeight="44.0" prefWidth="316.0">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+    </AnchorPane>
+   <AnchorPane layoutY="200.0" prefHeight="241.0" prefWidth="600.0">
+      <children>
+         <Label prefHeight="44.0" prefWidth="241.0" text="Modalité du contrat :" textFill="#f5aa8d">
+            <font>
+               <Font size="18.0" />
+            </font>
+         </Label>
+         <Label layoutX="59.0" layoutY="44.0" prefHeight="44.0" prefWidth="241.0" text="Modalité du contrat :" textFill="#f5aa8d">
+            <font>
+               <Font size="18.0" />
+            </font>
+         </Label>
+         <Label layoutX="59.0" layoutY="99.0" prefHeight="44.0" prefWidth="241.0" text="Montant du contrat :" textFill="#f5aa8d">
+            <font>
+               <Font size="18.0" />
+            </font>
+         </Label>
+         <Label fx:id="modal_contrat" layoutX="257.0" layoutY="44.0" prefHeight="44.0" prefWidth="316.0">
+            <font>
+               <Font size="18.0" />
+            </font>
+         </Label>
+         <Label fx:id="montant_contrat" layoutX="257.0" layoutY="99.0" prefHeight="44.0" prefWidth="316.0">
+            <font>
+               <Font size="18.0" />
+            </font>
+         </Label>
+         <Button layoutX="550.0" layoutY="55.0" mnemonicParsing="false" onAction="#info_modal" prefHeight="27.0" prefWidth="34.0">
+            <graphic>
+               <ImageView fitHeight="25.0" fitWidth="31.0" pickOnBounds="true" preserveRatio="true">
+                  <image>
+                     <Image url="@image/info.png" />
+                  </image></ImageView>
+            </graphic>
+         </Button>
+         <Button layoutX="353.0" layoutY="182.0" mnemonicParsing="false" onAction="#renouveler_contrat" prefHeight="52.0" prefWidth="234.0" style="-fx-background-color: green;" text="Renouveler le contrat" textFill="WHITE" />
+      </children>
+   </AnchorPane>
+</AnchorPane>
